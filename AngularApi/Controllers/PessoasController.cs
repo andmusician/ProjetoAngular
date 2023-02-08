@@ -58,6 +58,11 @@ namespace AngularApi.Controllers
         {
             Pessoa pessoa = await _contexto.Pessoas.FindAsync(PessoaId);
 
+            if(pessoa == null)
+            {
+                return NotFound();
+            }
+
             _contexto.Remove(pessoa);
             await _contexto.SaveChangesAsync();
 
