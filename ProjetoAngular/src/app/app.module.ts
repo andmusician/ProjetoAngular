@@ -8,12 +8,18 @@ import { PessoasService } from './pessoas.service';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { PainelComponent } from './painel/painel.component';
+import { TentativasComponent } from './tentativas/tentativas.component';
+import { ProgressoComponent } from './progresso/progresso.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopoComponent
+    TopoComponent,
+    PainelComponent,
+    TentativasComponent,
+    ProgressoComponent
   ],
   imports: [
     BrowserModule,
